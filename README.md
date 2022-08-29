@@ -1,259 +1,99 @@
-# Creating a boilerplate for React 18 in ViteJS
+<div align="center" id="top">
+  <img src="./.github/app.gif" alt="OwnerTube" />
 
-## Editorconfig
+&#xa0;
 
-If your are using editorconfig, this is my config:
+  <!-- <a href="https://OwnerTube.netlify.app">Demo</a> -->
+</div>
 
-```
-# EditorConfig is awesome: https://EditorConfig.org
+<h1 align="center">OwnerTube</h1>
 
-# top-most EditorConfig file
-root = true
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/AlexMarquesAlves/OwnerTube?color=56BEB8">
 
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-```
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/AlexMarquesAlves/OwnerTube?color=56BEB8">
 
-## For ESLint and Prettier
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/AlexMarquesAlves/OwnerTube?color=56BEB8">
 
-```
-npm i eslint @babel/eslint-parser @babel/preset-env @babel/preset-react prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-storybook -D
-```
+  <img alt="License" src="https://img.shields.io/github/license/AlexMarquesAlves/OwnerTube?color=56BEB8">
 
-Create the files `.eslintrc.js`, `.prettierrc.js` and a file called
-`babel.config.js`.
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/AlexMarquesAlves/OwnerTube?color=56BEB8" /> -->
 
-.eslintrc.js
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/AlexMarquesAlves/OwnerTube?color=56BEB8" /> -->
 
-```javascript
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    jest: true,
-    node: true,
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
-  ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  plugins: ['react', 'prettier', 'react-hooks'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
-  rules: {
-    'react/react-in-jsx-scope': 'off',
-  },
-};
-```
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/AlexMarquesAlves/OwnerTube?color=56BEB8" /> -->
+</p>
 
-.prettierrc.js
+Status
 
-```javascript
-module.exports = {
-  arrowParens: 'always',
-  bracketSpacing: true,
-  endOfLine: 'lf',
-  htmlWhitespaceSensitivity: 'ignore',
-  insertPragma: false,
-  jsxSingleQuote: false,
-  printWidth: 80,
-  proseWrap: 'always',
-  quoteProps: 'as-needed',
-  requirePragma: false,
-  semi: true,
-  singleQuote: true,
-  tabWidth: 2,
-  trailingComma: 'all',
-  useTabs: false,
-  vueIndentScriptAndStyle: false,
-  embeddedLanguageFormatting: 'off',
-};
+<h4 align="center">
+	🚧  OwnerTube 🚀 Under construction...  🚧
+</h4>
+
+<hr>
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <!-- <a href="#sparkles-features">Features</a> &#xa0; | &#xa0; -->
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/AlexMarquesAlves" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About
+
+Describe your project
+
+## :sparkles: Features
+
+<!-- :heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3; -->
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [Emotion](https://emotion.sh/docs/introduction)
+- [MUI](https://mui.com/pt/)
+- [React](https://pt-br.reactjs.org/)
+- [React Player](https://video-react.js.org/components/player/)
+- [React Router](https://reactrouter.com/en/v6.3.0/getting-started/installation)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://reactnative.dev/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/AlexMarquesAlves/OwnerTube
+
+# Access
+$ cd OwnerTube
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn start
+
+# The server will initialize in the <http://localhost:3000>
 ```
 
-babel.config.js
+## :memo: License
 
-```javascript
-module.exports = {
-  presets: [
-    '@babel/preset-env',
-    ['@babel/preset-react', { runtime: 'automatic' }],
-  ],
-};
-```
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-## Prop-types?
+Made with :heart: by <a href="https://github.com/AlexMarquesAlves" target="_blank">¡Duque</a>
 
-If your are using proptypes, install it:
+&#xa0;
 
-```
-npm i prop-types
-```
-
-And use:
-
-## Testing
-
-For tests, we're going to use `vitest` and `testing-library`.
-
-### For vitest
-
-```
-npm i -D vitest jsdom @testing-library/react @testing-library/jest-dom
-```
-
-Now, in your vite.config.js:
-
-```javascript
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  root: 'src',
-  build: {
-    outDir: '../dist',
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: ['../.test/setup.js'],
-    include: ['**/*(*.)?{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    exclude: ['node_modules', 'dist', '.idea', '.git', '.cache'],
-  },
-});
-```
-
-For the file in `/.test/setup.js`, use:
-
-```javascript
-import '@testing-library/jest-dom';
-import 'jest-styled-components';
-```
-
-Ps.: I added `jest-styled-components` to make it easy for me. I am going to use
-Styled-Components. If your aren't, please comment that line out.
-
-### For Styled Components
-
-```
-npm i styled-components
-npm i -D jest-styled-components @types/styled-components
-```
-
-Create a folder called styles in `src`. Add the files `render-theme.jsx`,
-`global-styles.jsx`, `theme.js` and a `styled-theme-provider.jsx`.
-
-The file `theme.js` is where you should add the theme for your application, for
-example (the most simple and ugly theme you would ever see):
-
-```javascript
-export const theme = {
-  colors: {
-    primary: 'red',
-    secondary: 'blue',
-  },
-};
-```
-
-The `global-styles.jsx` is where we add the global theme for our application.
-Here we can add fonts, provide css reset and more.
-
-```javascript
-import { createGlobalStyle } from 'styled-components';
-
-export const GlobalStyles = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 62.5%;
-  }
-
-  body {
-    font-size: 1.6rem;
-  }
-`;
-```
-
-The `styled-theme-provider.jsx` makes things easier by providing the theme to
-other components.
-
-```javascript
-import { ThemeProvider } from 'styled-components';
-import Proptypes from 'prop-types';
-import { GlobalStyles } from './global-styles';
-import { theme } from './theme';
-
-export const StyledThemeProvider = ({ children }) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      {children}
-    </ThemeProvider>
-  );
-};
-
-StyledThemeProvider.propTypes = {
-  children: Proptypes.node.isRequired,
-};
-```
-
-The file `render-theme.jsx` is going to be used for tests. It will provide the
-`StyledThemeProvider` so we can use styled-components in our tests.
-
-This is the most basic version of the `renderTheme` function.
-
-```javascript
-import { render } from '@testing-library/react';
-import { StyledThemeProvider } from './styled-theme-provider';
-
-export const renderTheme = (children) => {
-  return render(<StyledThemeProvider>{children}</StyledThemeProvider>);
-};
-```
-
-And on the `main.jsx`, you may want to wrap everything using
-`StyledThemeProvider`.
-
-```javascript
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { StyledThemeProvider } from './styles/styled-theme-provider';
-import App from './App';
-import './index.css';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <StyledThemeProvider>
-      <App />
-    </StyledThemeProvider>
-  </React.StrictMode>,
-);
-```
+<a href="#top">Back to top</a>
