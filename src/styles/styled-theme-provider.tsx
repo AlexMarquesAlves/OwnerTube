@@ -3,16 +3,15 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global-styles';
 import { theme } from './theme';
 
-type MyThemeProviderProps ={
-  children: React.ReactNode
-}
+type StyledThemeProviderProps = {
+  children: React.ReactNode;
+};
 
-export const MyThemeProvider = ({ children }:MyThemeProviderProps) => {
+export const StyledThemeProvider = ({ children }: StyledThemeProviderProps) => {
   return (
     <ThemeProvider theme={theme}>
-      {children}
       <GlobalStyles />
+      {children}
     </ThemeProvider>
   );
 };
-

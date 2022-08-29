@@ -1,4 +1,5 @@
-import { MyThemeProvider } from '../src/styles/MyThemeProvider';
+// import { MyThemeProvider } from '../src/styles/MyThemeProvider';
+import { StyledThemeProvider } from '../src/styles/styled-theme-provider';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -12,8 +13,8 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <MyThemeProvider>
+    <StyledThemeProvider>
       <Story />
-    </MyThemeProvider>
+    </StyledThemeProvider>
   ),
 ];
