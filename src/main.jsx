@@ -1,9 +1,11 @@
-import ReactDOM from 'react-dom/client';
-import { Heading } from './components/Heading';
-import { StyledThemeProvider } from './styles/styled-theme-provider';
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { StyledThemeProvider } from "./styles/styled-theme-provider";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById({"root"}));
+
+root.render(
   <StyledThemeProvider>
-    <Heading>Heading</Heading>
-  </StyledThemeProvider>,
+    <App />
+  </StyledThemeProvider>
 );
