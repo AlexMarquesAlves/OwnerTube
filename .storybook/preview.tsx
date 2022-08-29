@@ -1,4 +1,5 @@
 // import { MyThemeProvider } from '../src/styles/MyThemeProvider';
+import React from 'react';
 import { StyledThemeProvider } from '../src/styles/styled-theme-provider';
 
 export const parameters = {
