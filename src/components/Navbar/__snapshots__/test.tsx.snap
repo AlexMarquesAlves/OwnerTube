@@ -1,7 +1,8 @@
 // Vitest Snapshot v1
 
-exports[`should render Heading with text Hello YouTube 1`] = `
+exports[`should render Navbar with text Hello 1`] = `
 <h1>
-  Heading
+  Navbar
+  Hello
 </h1>
 `;
