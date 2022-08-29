@@ -11,4 +11,6 @@ export default {
   },
 };
 
-export const Template = (args) => <Heading {...args} />;
+export const Template = (
+  args: JSX.IntrinsicAttributes & { children: string },
+) => <Heading {...args} />;
