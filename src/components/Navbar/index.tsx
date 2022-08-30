@@ -20,7 +20,12 @@ export const Navbar = ({ children }: NavbarProps) => {
           top: 0,
           justifyContent: "space-between",
         }}
-      ></Stack>
+      >
+        <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
+          <img src={logo} height={45} />
+        </Link>
+        {children}
+      </Stack>
     </>
   );
 };
