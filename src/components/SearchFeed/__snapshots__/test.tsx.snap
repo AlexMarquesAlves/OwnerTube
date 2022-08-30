@@ -1,8 +1,8 @@
 // Vitest Snapshot v1
 
-exports[`should render Navbar with text Hello 1`] = `
+exports[`should render SearchFeed with text Hello 1`] = `
 <h1>
-  Navbar
+  SearchFeed
   Hello
 </h1>
 `;
