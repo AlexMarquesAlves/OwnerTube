@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`should render Navbar with text Hello 1`] = `
+<h1>
+  Navbar
+  Hello
+</h1>
+`;
